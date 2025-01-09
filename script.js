@@ -46,18 +46,18 @@ function gerarNotaFiscal() {
     // Const NFE, código que gera a nota fiscal, uma const que virará o innerHTML.//
     const NFE = `
         <h2>Nota Fiscal de Serviço NFS-E</h2>
-        <p><strong>Valor da Venda:</strong> <strong> R$: ${valorVendaFormatado}</strong></p>
+        <p><strong>Valor da Venda:</strong> <strong> ${valorVendaFormatado}</strong></p>
         <p><strong>Itens Vendidos:</strong> ${itensVendidos}</p>
         <p><strong>Valores dos Impostos:</strong></p>
         <ul>
-            <li>IRPF: <strong> R$: ${irpfFormatado}</strong></li>
-            <li>PIS: <strong> R$: ${pisFormatado} </strong></li>
-            <li>COFINS: <strong> R$: ${cofinsFormatado}</strong></li>
-            <li>INSS: <strong> R$: ${inssFormatado}</strong></li>
-            <li>ISSQN: <strong> R$: ${issqnFormatado}</strong></li>
+            <li>IRPF: <strong> ${irpfFormatado}</strong></li>
+            <li>PIS: <strong> ${pisFormatado} </strong></li>
+            <li>COFINS: <strong> ${cofinsFormatado}</strong></li>
+            <li>INSS: <strong> ${inssFormatado}</strong></li>
+            <li>ISSQN: <strong> ${issqnFormatado}</strong></li>
         </ul>
-        <p><strong>Total pago de Impostos:</strong> <strong> R$: ${totalImpostosFormatado}</strong></p>
-        <p><strong>Valor Líquido:</strong> <strong> R$: ${valorLiquidoFormatado}</strong></p>
+        <p><strong>Total pago de Impostos:</strong> <strong> ${totalImpostosFormatado}</strong></p>
+        <p><strong>Valor Líquido:</strong> <strong> ${valorLiquidoFormatado}</strong></p>
     `;
 
     // Código que insere a const NFE no elemento com id 'nota-fiscal' e exibe a nota fiscal na tela.//
