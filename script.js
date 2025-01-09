@@ -57,11 +57,15 @@ function gerarNotaFiscal() {
             <li>ISSQN: <strong> ${issqnFormatado}</strong></li>
         </ul>
         <p><strong>Total pago de Impostos:</strong> <strong> ${totalImpostosFormatado}</strong></p>
-        <p><strong>Valor Líquido:</strong> <strong> ${valorLiquidoFormatado}</strong></p>
+        <p><strong>Valor Líquido:</strong> <strong> ${valorLiquidoFormatado}</strong></p> 
     `;
 
     // Código que insere a const NFE no elemento com id 'nota-fiscal' e exibe a nota fiscal na tela.//
     const NotaFiscal = document.getElementById('nota-fiscal');
     NotaFiscal.innerHTML = NFE;
     NotaFiscal.style.display = 'block';
+    NotaFiscal.style.textAlign = 'center';
+    NotaFiscal.style.fontFamily = "Montserrat", serif;
+    NotaFiscal.style.border = '1.5px solid #ccc', 'border-radius: 5px', 'box-shadow 0 1 3px rgba(0, 0, 0, 0.1)';
+    
 }
