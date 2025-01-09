@@ -1,0 +1,71 @@
+body {
+    font-family: "Montserrat", serif;
+    margin: 20px;
+    background-color: #E5E7EB;
+    color: #000000;
+}
+
+h1 {
+    font-size: 2.5rem; 
+    color: #000000; 
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+label {
+    display: block;
+    margin-top: 12px;
+    border-radius: 2px;
+}
+
+input, textarea {
+    width: 99%;
+    margin-top: 10px;
+}
+/* Estilização do botão que gatilhará a função de gerar a NFE */
+button {
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 13px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #59ca68; 
+    border: none;
+    border-radius: 0.5rem; 
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background: #11e42d; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  button:active {
+    transform: scale(0.95); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:disabled {
+    background: #9ca3af; 
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  /* Acima foi o fim da estilização que permite uma melhor visualização do usuário ao botão */
+textarea {
+    height: 100px;
+}
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
